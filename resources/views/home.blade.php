@@ -7,6 +7,7 @@
 
     <div class="comics-section">
         <div class="w-75 m-auto">
+            <a href="{{route('comics.create')}}"><button class="bg-primary">ADD COMIC</button></a>
             <div class="container py-5">
                 <div class="d-flex flex-wrap">
 
