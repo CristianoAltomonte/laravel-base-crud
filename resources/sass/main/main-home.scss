@@ -1,0 +1,30 @@
+.comics-section {
+    background-color: #1c1c1c;
+}
+
+.card-container {
+    width: calc(100% /6);
+    padding: 10px;
+}
+
+.image-comic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+
+}
+
+.nav-main {
+    width: 80%;
+    margin: auto;
+}
+
+.container-main {
+    padding: 10px;
+    background-color: rgba(2, 130, 249, 1);
+}
+
+.nav-main img {
+    width: 40px;
+}
