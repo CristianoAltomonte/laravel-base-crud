@@ -20,4 +20,27 @@
 
 
     </div>
+    <div class="d-flex m-3">
+        <a href="{{ route('comics.edit', $comics->id) }}"><button type="button"
+                class="btn btn-outline-warning mt-4 me-2">Modifica Comic</button></a>
+
+        <form action="{{ route('comics.destroy', $comics->id) }}" method="POST">
+
+            @csrf
+            @method('DELETE')
+
+            <button type="submit" class="btn btn-outline-danger mt-4 me-2">Elimina Comic</button></a>
+
+        </form>
+    </div>
+
+    <div>
+        @if (session('success'))
+            <div class="alert alert-success my-3">
+                {{ session('success') }}
+            </div>
+        @endif
+    </div>
+
+
 @endsection
